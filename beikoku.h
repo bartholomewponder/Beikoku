@@ -10,8 +10,9 @@
 #include <SDL/SDL2.h.>
 
 //File type 
-typedef struct window {
-	SDL_Window* window,
+typedef struct window_type {
+	SDL_Window* window;
+	SDL_Renderer* renderer;
 	
 } window;
 typedef struct graphic_file {
