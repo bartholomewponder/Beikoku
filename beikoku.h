@@ -9,17 +9,18 @@
 
 #include <SDL/SDL2.h.>
 
-//File type 
+
 typedef struct window_type {
 	SDL_Window* window;
 	SDL_Renderer* renderer;
 	
 } window;
+/* File type */ 
 typedef struct graphic_file {
 	
 } graphic;
 typedef struct sound_file {
-	FILE* pFile;
+	FILE* pSoundFile;
 	SDL_AudioSpec audio;
 	const char* filename;
 	bool looping;
@@ -27,7 +28,7 @@ typedef struct sound_file {
 	
 } sound;
 typedef struct stage_file {
-	FILE* pFile;
+	FILE* pStageFile;
 	const char* filename;
 	uint32_t enemy_num, 
 	sound stage_music; 
@@ -35,6 +36,7 @@ typedef struct stage_file {
 typedef struct shader_file {
 	const char* filename;
 	FILE* pFile;
+	bool 
 } shader;
 typedef struct char_type {
 	const char* name;
